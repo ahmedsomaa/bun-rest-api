@@ -1,0 +1,17 @@
+{
+  "version": "1.0.4",
+  "name": "bun-rest-api",
+  "devDependencies": {
+    "bun-types": "latest",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "hono": "^2.0.0"
+  },
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "test": "bun wiptest src/tests/*.test.ts",
+    "format": "prettier --write --config ./.prettierrc --write 'src/**/*.{ts, test.ts}'"
+  },
+  "module": "src/index.js"
+}
